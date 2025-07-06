@@ -1,0 +1,183 @@
+* {
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+  background-color: snow;
+  font-family: serif;
+}
+h1 {
+  font-size: 30px;
+  writing-mode: vertical-rl;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  letter-spacing: 4px;
+  text-align: top;
+  line-height: 1.5;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-left: 1.5px solid black;
+  border-right: 1.5px solid black;
+}
+
+h2{
+  font-size: 13px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.fadetext {
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+  animation: mymove 5s ease-in-out infinite;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  0%   { opacity: 1; }
+  60%  { opacity: 0.01; } /* 사라짐 */
+  80%  { opacity: 0.01; } /* 사라진 상태 유지 */
+  100% { opacity: 1; }    /* 다시 나타남 */
+}
+
+.fadetext:hover {
+  text-decoration: underline 1px;
+  font-style: italic;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+figcaption {
+  font-size: 12px;
+  color: black;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.info {
+  color: white;
+  line-height: 2.5;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap; /* 줄바꿈 허용 */
+  gap: 40px;        /* 이미지 간 간격 */
+  margin: 0px 0;
+  background-color: black;
+  padding: 20px;
+}
+
+.image-wrapper {
+  line-height: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* 줄바꿈 허용 */
+  gap: 40px;        /* 이미지 간 간격 */
+  margin: 0px 0;
+  background-color: orangered;
+  padding: 20px;
+  
+}
+
+ul {
+    border-bottom: 1.5px solid black;
+    border-top: 1.5px solid black;
+  
+}
+
+img {
+    max-height: 400px;
+    padding: 5px;
+  
+}
+
+.image-wrapper2 {
+  line-height: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* 줄바꿈 허용 */
+  gap: 40px;        /* 이미지 간 간격 */
+  margin: 0px 0;
+  background-color: lawngreen;
+  padding: 20px;
+}
+
+.image-wrapper3 {
+  line-height: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* 줄바꿈 허용 */
+  gap: 40px;        /* 이미지 간 간격 */
+  margin: 0px 0;
+  background-color: blue;
+  padding: 20px;
+}
+
+.image-wrapper ul,
+.image-wrapper2 ul,
+.image-wrapper3 ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+summary.as-button0 {
+  cursor: pointer;
+  padding: 0px 25px;
+  text-align: center;
+}
+
+summary.as-button0:hover {
+  color: black;
+  background-color: white;
+  letter-spacing: 8px;
+  border-radius: 15px;
+  transition-duration: 2s;
+}
+
+
+summary.as-button {
+  cursor: pointer;
+  padding: 0px 25px;
+  text-align: center;
+}
+
+summary.as-button:hover {
+  color: white;
+  background-color: black;
+  letter-spacing: 8px;
+  border-radius: 15px;
+  transition-duration: 2s;
+}
+
+footer {
+  font-size: 9pt;
+  margin: 30px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.footertext {
+  color: inherit;
+}
