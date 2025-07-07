@@ -8,6 +8,35 @@ body {
   background-color: snow;
   font-family: serif;
 }
+
+.marquee-header {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: snow;
+  color: grey;
+  padding: 10px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.marquee-text {
+  font-size: 13px;
+  letter-spacing: 3px;
+  display: inline-block;
+  padding-right: 50%; /* 오른쪽 바깥에서 시작하게 */
+  animation: scroll-left-to-right 50s linear infinite;
+}
+
+@keyframes scroll-left-to-right {
+  0% {
+    transform: translateX(-100%); /* 왼쪽 바깥에서 시작 */
+  }
+  100% {
+    transform: translateX(100%); /* 오른쪽 바깥으로 빠져나감 */
+  }
+}
+
 h1 {
   font-size: 30px;
   writing-mode: vertical-rl;
