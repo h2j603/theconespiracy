@@ -207,7 +207,6 @@ summary.as-button {
 }
 
 summary.as-button:hover {
-  margin: 10px;
   color: white;
   background-color: black;
   letter-spacing: 8px;
