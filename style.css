@@ -20,7 +20,7 @@ body {
   position: relative;
 }
 
-.marquee-text {
+.marquee-container {
   font-size: 13px;
   letter-spacing: 3px;
   display: inline-block;
@@ -30,10 +30,10 @@ body {
 
 @keyframes scroll-left-to-right {
   0% {
-    transform: translateX(-100%); /* 왼쪽 바깥에서 시작 */
+    transform: translateX(-50%); /* 왼쪽 바깥에서 시작 */
   }
   100% {
-    transform: translateX(100%); /* 오른쪽 바깥으로 빠져나감 */
+    transform: translateX(0%); /* 오른쪽 바깥으로 빠져나감 */
   }
 }
 
@@ -53,6 +53,7 @@ h1 {
   border-left: 1.5px solid black;
   border-right: 1.5px solid black;
 }
+
 
 h2{
   font-size: 13px;
@@ -133,6 +134,7 @@ ul {
 
 img {
     max-height: 400px;
+    max-width: 200px;
     padding: 5px;
   
 }
@@ -159,9 +161,21 @@ img {
   padding: 20px;
 }
 
+.image-wrapper4 {
+  line-height: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* 줄바꿈 허용 */
+  gap: 40px;        /* 이미지 간 간격 */
+  margin: 0px 0;
+  background-color: #00bdff;
+  padding: 20px;
+}
+
 .image-wrapper ul,
 .image-wrapper2 ul,
-.image-wrapper3 ul {
+.image-wrapper3 ul,
+.image-wrapper4 ul {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -178,6 +192,7 @@ summary.as-button0 {
 }
 
 summary.as-button0:hover {
+  margin: 10px;
   color: black;
   background-color: white;
   letter-spacing: 8px;
@@ -193,6 +208,7 @@ summary.as-button {
 }
 
 summary.as-button:hover {
+  margin: 10px;
   color: white;
   background-color: black;
   letter-spacing: 8px;
