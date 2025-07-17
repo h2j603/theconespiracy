@@ -129,23 +129,23 @@ figcaption {
 }
 
 .gallery-korea {
-  background-color: orangered;
+  background-color: #ff9600;
 }
 
 .gallery-japan {
-  background-color: lawngreen;
+  background-color: #a569ff;
 }
 
 .gallery-thai {
-  background-color: blue;
+  background-color: #55f21c;
 }
 
 .gallery-china {
-  background-color: #00bdff;
+  background-color: #554dff;
 }
 
 .gallery-germany {
-  background-color: deeppink;
+  background-color: #ffff00;
 }
 
 .image-gallery img {
